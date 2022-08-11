@@ -1,0 +1,10 @@
+{
+  "users": [
+    { "id": 1, "name": "John", "surname": "Peterson", "email": "JohnMail@mail.ru", "phone": "8(977)777-77-77", "password": "John" },
+    { "id": 2, "name": "Pete", "surname": "JohnSon", "email": "PeteMail@mail.ru", "phone": "8(977)777-77-77", "password": "Pete" },
+    { "id": 3, "name": "Ivan", "surname": "Petrov", "email": "IvanMail@mail.ru", "phone": "8(977)777-77-77", "password": "Ivan" },
+    { "id": 4, "name": "Petr", "surname": "Vasyin", "email": "PetrMail@mail.ru", "phone": "8(977)777-77-77", "password": "Petr" },
+    { "id": 5, "name": "Vasya", "surname": "Mashkov", "email": "VasyaMail@mail.ru", "phone": "8(977)777-77-77", "password": "Vasya" },
+    { "id": 6, "name": "Masha", "surname": "Ivanova", "email": "MashaMail@mail.ru", "phone": "8(977)777-77-77", "password": "Masha" }
+  ]
+}

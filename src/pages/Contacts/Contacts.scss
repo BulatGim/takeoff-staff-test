@@ -1,0 +1,23 @@
+.Contacts{
+  max-width: 1440px;
+  margin: 50px auto;
+  .header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &-hello{
+      &__item{
+
+      }
+      &__contacts-list{
+        margin-top: 20px;
+
+      }
+    }
+    &-time{
+      &__hours-minutes{
+
+      }
+    }
+  }
+}

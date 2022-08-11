@@ -1,23 +1,36 @@
-# Getting Started with Create React App
+# Getting Started 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**Your node version is 16.15.1, cause this version supports this project**
+
+First you need to fork this directory;
+
+Then run `npm install` in your [terminal](https://ru.wikipedia.org/wiki/%D0%9A%D0%BE%D0%BC%D0%BF%D1%8C%D1%8E%D1%82%D0%B5%D1%80%D0%BD%D1%8B%D0%B9_%D1%82%D0%B5%D1%80%D0%BC%D0%B8%D0%BD%D0%B0%D0%BB)
 
 ## Available Scripts
 
 In the project directory, you can run:
 
+### `node ./json-server/index.js`
+
+Runs the json-server to authorize.\
+You can send requests on [http://localhost:8000](http://localhost:8000).
+
+**To authorize you can use next name and passwords:**
+
+**name: John password: John**
+
+**name: Peter password: Peter**
+
+**name: Ivan password: Ivan**
+
+**name: Masha password: Masha**
+
+**Note: if you reload page your authorize will be lost, so you will need to authorize again ;)**
+
 ### `npm start`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
 ### `npm run build`
 
@@ -29,18 +42,16 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+## Inside project
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+You need to authorize, then you will go to contacts page.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Down there you can edit contacts, delete em, add new contact.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+**Note: default contacts are in store and new contacts will be in store, so if you reload page all new contacts gonna lost**
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+**Note: all forms secured by validations, so you need to fill them and in email type like this: `mail@mail.ru`**
 
-## Learn More
+## About me
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+You can find me in telegram: [@BulatGim](@BulatGim), email: [bulat.gimaletdinov.01@gmail.com](bulat.gimaletdinov.01@gmail.com), hh: [resume](https://hh.ru/resume/ab204d51ff0af4d82c0039ed1f677578485634).
