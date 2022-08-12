@@ -1,5 +1,5 @@
-import {ChangeEvent, useState} from "react";
-import {IFormValues, IUser} from "../types/contextTypes";
+import {ChangeEvent} from "react";
+import {IFormValues, IUser} from "../types/types";
 
 export const useHandleChange = (setter: (value: IFormValues | IUser)=>void, values: IFormValues | IUser)=>{
     function handleChange(e: ChangeEvent<HTMLInputElement> | ChangeEvent<HTMLTextAreaElement>) {

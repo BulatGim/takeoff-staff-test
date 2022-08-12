@@ -1,6 +1,6 @@
 import "./formInput.scss"
 import {FC, useEffect, useState, ChangeEvent, KeyboardEvent} from "react";
-import {IContact, IFormValues, IUser} from "../../types/contextTypes";
+import {IContact, IFormValues, IUser} from "../../types/types";
 import {useHandleChange} from "../../hooks/useHandleChange";
 
 interface IFromInputProps {

@@ -1,4 +1,4 @@
-import {IContact, IUser} from "../types/contextTypes";
+import {IContact} from "../types/types";
 import {makeAutoObservable} from "mobx";
 
 export default class ContactsStore {

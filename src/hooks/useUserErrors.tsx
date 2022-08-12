@@ -1,4 +1,4 @@
-import {IUserError} from "../types/contextTypes";
+import {IUserError} from "../types/types";
 
 export const useUserError = (userError: IUserError[], setterUserErrors: (arr: IUserError[]) => void) => {
 

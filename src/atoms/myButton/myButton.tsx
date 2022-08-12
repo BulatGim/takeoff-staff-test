@@ -1,4 +1,4 @@
-import {FC, MouseEventHandler, ReactNode} from 'react';
+import {FC, ReactNode} from 'react';
 import "./myButton.scss"
 
 interface IMyButton {

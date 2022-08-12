@@ -1,6 +1,6 @@
 import React, {FC, useContext} from 'react';
 import MyButton from "../../atoms/myButton/myButton";
-import {IContact} from "../../types/contextTypes";
+import {IContact} from "../../types/types";
 import {Context} from "../../index";
 import "./contact.scss"
 

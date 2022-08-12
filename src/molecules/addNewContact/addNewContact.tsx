@@ -2,7 +2,7 @@ import React, {FC, useCallback, useContext, useState} from 'react';
 import close from "./imgs/close-circled.svg"
 import "./addNewContact.scss"
 import FormInput from "../../atoms/formInput/formInput";
-import {IContact, IUserError} from "../../types/contextTypes";
+import {IContact, IUserError} from "../../types/types";
 import MyButton from "../../atoms/myButton/myButton";
 import {Context} from "../../index";
 import {useUserError} from "../../hooks/useUserErrors";

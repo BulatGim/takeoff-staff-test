@@ -1,4 +1,4 @@
-import {IContact} from "../types/contextTypes";
+import {IContact} from "../types/types";
 
 export default class ServiceStore {
 

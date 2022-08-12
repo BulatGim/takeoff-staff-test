@@ -1,10 +1,9 @@
 import {useCallback, useContext, useState} from 'react';
 import FormInput from "../../atoms/formInput/formInput";
 import {useNavigate} from "react-router-dom";
-import {IFormValues, IUserError} from "../../types/contextTypes";
+import {IFormValues, IUserError} from "../../types/types";
 import MyButton from "../../atoms/myButton/myButton";
 import "./AuthForm.scss"
-import {useHandleChange} from "../../hooks/useHandleChange";
 import {useUserError} from "../../hooks/useUserErrors"
 import axios from "axios";
 import {Context} from "../../index";

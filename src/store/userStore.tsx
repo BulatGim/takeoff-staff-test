@@ -1,4 +1,4 @@
-import {IUser} from "../types/contextTypes";
+import {IUser} from "../types/types";
 import {makeAutoObservable} from "mobx";
 
 export default class userStore {
