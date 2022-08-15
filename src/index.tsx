@@ -7,6 +7,7 @@ import userStore from "./store/userStore";
 import ContactsStore from "./store/ContactsStore";
 import {IContext} from "./types/contextTypes";
 import ServiceStore from "./store/serviceStore";
+import {BrowserRouter} from "react-router-dom";
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -22,7 +23,9 @@ root.render(
           contacts: new ContactsStore(),
           service: new ServiceStore(),
       }}>
-          <App />
+          <BrowserRouter>
+              <App />
+          </BrowserRouter>
       </Context.Provider>
   </React.StrictMode>
 );

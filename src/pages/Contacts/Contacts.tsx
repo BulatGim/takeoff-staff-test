@@ -6,29 +6,36 @@ import MyModal from "../../organisms/MyModal/MyModal";
 import AddNewContact from "../../molecules/addNewContact/addNewContact";
 import {observer} from "mobx-react-lite";
 import Contact from "../../molecules/contact/contact";
+import {useNavigate} from "react-router-dom";
+import moment from "moment"
 
 const Contacts = observer(() => {
     const context = useContext(Context)
 
     const [isModalActive, setIsModalActive] = useState<boolean>(false)
 
-    const [date, setDate] = useState<Date>(new Date())
+    const [hours, setHours] = useState<number>(Number(moment().format("hh")))
 
-    const [hours, setHours] = useState<number>(date.getHours())
+    const [minutes, setMinutes] = useState<number>(Number(moment().format("mm")))
 
-    const [minutes, setMinutes] = useState<number>(date.getMinutes())
+    let navigate = useNavigate()
 
     useEffect(()=>{
         setInterval(()=>{
-            setDate(new Date());
-            setHours(date.getHours())
-            setMinutes(date.getMinutes())
-        }, 60000)
+            setHours(Number(moment().format("hh")))
+            setMinutes(Number(moment().format("mm")))
+        }, 30000)
         return clearInterval
     }, [])
 
     function showHideModal() {
         isModalActive?(setIsModalActive(false)): setIsModalActive(true)
+    }
+    
+    function quit() {
+        localStorage.setItem("user", "")
+        context?.user.zeroingUser()
+        navigate("/")
     }
 
     useEffect(()=>{
@@ -41,8 +48,9 @@ const Contacts = observer(() => {
                     <h2 className="header-hello__item">Здравствуйте {context?.user?.User?.name}</h2>
                     <h3 className="header-hello__contacts-list">Ваш список контактов:</h3>
                 </div>
-                <div className="header-time">
-                    <h3 className="header-time__hours-minutes">{hours} : {minutes}</h3>
+                <div className="header-panel">
+                    <MyButton callBack={quit}><h3>Выйти</h3></MyButton>
+                    <h3 className="header-panel__hours-minutes">{hours} : {minutes}</h3>
                 </div>
             </section>
             <section>
@@ -55,7 +63,6 @@ const Contacts = observer(() => {
                     </MyModal>
                 ):("")}
             </section>
-
             <section className="contacts-list">
                 {context?.contacts?.Contacts.map((item)=>
                     <Contact Contact={item} key={item.id} modalController={()=>showHideModal()}/>

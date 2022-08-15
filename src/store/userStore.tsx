@@ -11,6 +11,11 @@ export default class userStore {
 
     setUser(user:IUser){
         this._user = user
+        localStorage.setItem("user", JSON.stringify(user))
+    }
+
+    zeroingUser(){
+        this._user = null
     }
 
     get User():IUser | null{

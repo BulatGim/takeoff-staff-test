@@ -48,7 +48,7 @@ const AddNewContact: FC<IAddNewContactProps> = observer(({closeSetter, editConta
     }
 
     function phoneValidation() {
-        values.phone ? hideUserError("phone") : showUserError("phone", "phone не может быть пустым")
+        values.phone ? hideUserError("phone") : showUserError("phone", "Телефон не может быть пустым")
     }
 
     function addEditContact() {

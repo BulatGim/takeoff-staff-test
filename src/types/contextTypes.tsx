@@ -10,7 +10,8 @@ export interface IContext {
 export interface IUserStore {
     _user: IUser | null;
     User: IUser | null;
-    setUser: (user:IUser)=> void
+    setUser: (user:IUser)=> void;
+    zeroingUser:()=>void;
 }
 
 export interface IContactsStore {
