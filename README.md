@@ -25,8 +25,6 @@ You can send requests on [http://localhost:8000](http://localhost:8000).
 
 **name: Masha password: Masha**
 
-**Note: if you reload page your authorize will be lost, so you will need to authorize again ;)**
-
 ### `npm start`
 
 Runs the app in the development mode.\
